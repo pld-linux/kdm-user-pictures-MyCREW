@@ -1,9 +1,9 @@
-#$Revision: 1.6 $, $Date: 2005-02-08 19:06:17 $
+#$Revision: 1.7 $, $Date: 2005-02-08 19:07:30 $
 
 %define         _name MYCREW
 
 Summary:	kdm user pictures - %{_name}
-Summary(pl):	Obrazki u¿ytkowników do kdm - %{_name}
+Summary(pl):	Obrazki u¿ytkowników dla kdm-a - %{_name}
 Name:		kdm-user-pictures-%{_name}
 Version:	2.0
 Release:	1
@@ -17,7 +17,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-%{_name} is icons of user avantars for kdm
+%{_name} is icons of user avantars for kdm.
 
 %description -l pl
 %{_name} to ikony obrazków u¿ytkowników dla kdm-a.
