@@ -1,9 +1,9 @@
-#$Revision: 1.4 $, $Date: 2005-02-08 15:42:42 $
+#$Revision: 1.5 $, $Date: 2005-02-08 18:51:28 $
 
 %define         _name MYCREW
 
 Summary:	kdm user pictures - %{_name}
-Summary(pl):	Obrazki u¿ytjowników do kdm - %{_name}
+Summary(pl):	Obrazki u¿ytkowników do kdm - %{_name}
 Name:		kdm-user-pictures-%{_name}
 Version:	2.0
 Release:	1
@@ -17,22 +17,22 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-%{_name} is icons of user avantars for kdm
+%{_name} is icons of user avantars for kdm-a.
 
 %description -l pl
-%{_name} to ikony obrazków u¿ytkowników dla kdm
+%{_name} to ikony obrazków u¿ytkowników dla kdm-a.
 
 %prep
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{_datadir}/apps/kdm/pics/users/%{_name}/
+install -d $RPM_BUILD_ROOT%{_datadir}/apps/kdm/pics/users/%{_name}
 
-unzip %{SOURCE0} -d $RPM_BUILD_ROOT/%{_datadir}/apps/kdm/pics/users/%{_name}/
+unzip %{SOURCE0} -d $RPM_BUILD_ROOT%{_datadir}/apps/kdm/pics/users/%{_name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{_datadir}/apps/kdm/pics/users/%{_name}/*
+%{_datadir}/apps/kdm/pics/users/%{_name}
