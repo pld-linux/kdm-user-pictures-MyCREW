@@ -1,4 +1,4 @@
-#$Revision: 1.5 $, $Date: 2005-02-08 18:51:28 $
+#$Revision: 1.6 $, $Date: 2005-02-08 19:06:17 $
 
 %define         _name MYCREW
 
@@ -17,7 +17,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-%{_name} is icons of user avantars for kdm-a.
+%{_name} is icons of user avantars for kdm
 
 %description -l pl
 %{_name} to ikony obrazków u¿ytkowników dla kdm-a.
