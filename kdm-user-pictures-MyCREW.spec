@@ -1,4 +1,4 @@
-#$Revision: 1.2 $, $Date: 2005-02-08 13:10:20 $
+#$Revision: 1.3 $, $Date: 2005-02-08 13:31:40 $
 
 %define         _name MYCREW
 
@@ -6,7 +6,7 @@ Summary:	KDE icons - %{_name}
 Summary(pl):	Motyw ikon do KDE - %{_name}
 Name:		kde-icons-%{_name}
 Version:	2.0
-Release:	0.1
+Release:	1
 License:	 GPL
 Group:		Themes
 Source0:	http://kde-look.org/content/files/18996-%{_name}%{version}.zip
@@ -26,13 +26,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_iconsdir}
+install -d $RPM_BUILD_ROOT/%{_datadir}/apps/kdm/pics/users/%{_name}/
 
-unzip %{SOURCE0} -d $RPM_BUILD_ROOT%{_iconsdir}
+unzip %{SOURCE0} -d $RPM_BUILD_ROOT/%{_datadir}/apps/kdm/pics/users/%{_name}/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{_iconsdir}/*
+%{_datadir}/apps/kdm/pics/users/%{_name}/*
