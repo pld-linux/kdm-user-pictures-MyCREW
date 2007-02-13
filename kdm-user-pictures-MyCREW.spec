@@ -1,9 +1,9 @@
-#$Revision: 1.8 $, $Date: 2007-02-12 00:49:00 $
+#$Revision: 1.9 $, $Date: 2007-02-13 08:06:37 $
 
 %define         _name MYCREW
 
 Summary:	kdm user pictures - %{_name}
-Summary(pl.UTF-8):   Obrazki użytkowników dla kdm-a - %{_name}
+Summary(pl.UTF-8):	Obrazki użytkowników dla kdm-a - %{_name}
 Name:		kdm-user-pictures-%{_name}
 Version:	2.0
 Release:	1
