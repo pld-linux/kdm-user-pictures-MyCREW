@@ -1,4 +1,4 @@
-#$Revision: 1.9 $, $Date: 2007-02-13 08:06:37 $
+#$Revision: 1.10 $, $Date: 2010-05-16 14:14:13 $
 
 %define         _name MYCREW
 
@@ -12,6 +12,7 @@ Group:		Themes
 Source0:	http://kde-look.org/content/files/18996-%{_name}%{version}.zip
 # Source0-md5:	18a59f750271ee2eef463cbb1403d206
 URL:		http://www.kde-look.org/content/show.php?content=18996
+BuildRequires:	unzip
 Requires:	kdelibs
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
