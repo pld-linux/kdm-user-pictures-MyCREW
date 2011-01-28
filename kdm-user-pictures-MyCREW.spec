@@ -1,4 +1,3 @@
-#$Revision: 1.10 $, $Date: 2010-05-16 14:14:13 $
 
 %define         _name MYCREW
 
